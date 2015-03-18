@@ -1,7 +1,10 @@
 #!/usr/bin/python
- 
-words = ['SEM',
-'eat your own dog food']
+import sys 
+
+words = []
+with open(sys.argv[1]) as f:
+  for line in f:
+    words.append(line)
 
 plop = {}
 
